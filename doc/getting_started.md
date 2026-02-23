@@ -12,7 +12,7 @@ Since GoUI is a local library in this context, you don't need to `go get` it if 
 If you were to use it as a module:
 
 ```bash
-go get github.com/yourusername/goui
+go get github.com/jacksalad/goui_v0
 ```
 
 ## Hello World
