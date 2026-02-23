@@ -1,9 +1,9 @@
 package component
 
 import (
-	"goui/event"
-	"goui/layout"
-	"goui/render"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type Component interface {
@@ -26,7 +26,7 @@ type BaseComponent struct {
 }
 
 func (b *BaseComponent) OnFocus() {}
-func (b *BaseComponent) OnBlur() {}
+func (b *BaseComponent) OnBlur()  {}
 
 func (b *BaseComponent) GetPreferredSize() (int32, int32) {
 	return b.Bounds.Width, b.Bounds.Height

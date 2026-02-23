@@ -1,10 +1,11 @@
 package component
 
 import (
-	"goui/event"
-	"goui/render"
 	"strings"
 	"time"
+
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type TextArea struct {

@@ -1,7 +1,7 @@
 package component
 
 import (
-	"goui/render"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type LineChart struct {

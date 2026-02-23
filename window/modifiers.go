@@ -1,6 +1,6 @@
 package window
 
-import "goui/event"
+import "github.com/jacksalad/goui_v0/event"
 
 func getModifiers() uint32 {
 	var mods uint32

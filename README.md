@@ -24,7 +24,7 @@ It is designed for educational purposes, small tools, and developers who want to
 Since GoUI is a library, you can import it into your Go project.
 
 ```bash
-go get github.com/yourusername/goui
+go get github.com/jacksalad/goui_v0
 ```
 
 *Note: GoUI currently supports **Windows** only.*
@@ -37,9 +37,9 @@ Here is a minimal "Hello World" application:
 package main
 
 import (
-	"goui/component"
-	"goui/layout"
-	"goui/window"
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/window"
 )
 
 func main() {

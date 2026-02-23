@@ -1,14 +1,14 @@
 package component
 
 import (
-	"goui/render"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type ProgressBar struct {
 	BaseComponent
-	Value    float64 // 0.0 to 1.0
-	Color    uint32
-	BgColor  uint32
+	Value   float64 // 0.0 to 1.0
+	Color   uint32
+	BgColor uint32
 }
 
 func NewProgressBar(width, height int32) *ProgressBar {

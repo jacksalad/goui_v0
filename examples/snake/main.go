@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-	"goui/component"
-	"goui/event"
-	"goui/layout"
-	"goui/render"
-	"goui/window"
 	"math/rand"
 	"sync"
 	"time"
+
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/render"
+	"github.com/jacksalad/goui_v0/window"
 )
 
 // Directions (using int for simplicity)
@@ -225,7 +226,7 @@ func (g *SnakeGame) Step() {
 func main() {
 	// 1. Create Window
 	win, err := window.NewWindow(window.WindowConfig{
-		Title:     "GoUI Snake",
+		Title:     "github.com/jacksalad/goui_v0 Snake",
 		Width:     800,
 		Height:    600,
 		Resizable: false,
@@ -251,7 +252,7 @@ func main() {
 	})
 	win.Add(header)
 
-	title := component.NewLabel("GoUI Snake Game")
+	title := component.NewLabel("github.com/jacksalad/goui_v0 Snake Game")
 	title.FgColor = 0xFFFFFFFF
 	header.Add(title)
 

@@ -1,8 +1,8 @@
 package component
 
 import (
-	"goui/event"
-	"goui/render"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type Button struct {
@@ -51,9 +51,9 @@ func (b *Button) Render(canvas *render.Canvas) {
 	if b.Font != nil {
 		canvas.SetFont(b.Font)
 	}
-	
+
 	textW, textH := render.MeasureText(b.Text, b.Font)
-	
+
 	textX := b.Bounds.X + (b.Bounds.Width-textW)/2
 	textY := b.Bounds.Y + (b.Bounds.Height-textH)/2
 

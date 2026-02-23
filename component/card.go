@@ -1,9 +1,9 @@
 package component
 
 import (
-	"goui/event"
-	"goui/layout"
-	"goui/render"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type Card struct {

@@ -1,9 +1,10 @@
 package component
 
 import (
-	"goui/event"
-	"goui/render"
 	"time"
+
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type TextBox struct {

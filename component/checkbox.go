@@ -1,8 +1,8 @@
 package component
 
 import (
-	"goui/event"
-	"goui/render"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/render"
 )
 
 type CheckBox struct {

@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"goui/component"
-	"goui/layout"
-	"goui/render"
-	"goui/window"
+
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/render"
+	"github.com/jacksalad/goui_v0/window"
 )
 
 type TicTacToe struct {

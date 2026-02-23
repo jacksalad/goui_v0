@@ -1,4 +1,4 @@
-module goui
+module github.com/jacksalad/goui_v0
 
 go 1.25.0
 

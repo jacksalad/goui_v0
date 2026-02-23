@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"goui/component"
-	"goui/window"
 	"log"
+
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/window"
 )
 
 func main() {

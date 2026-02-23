@@ -24,9 +24,9 @@ package main
 
 import (
 	"fmt"
-	"goui/component"
-	"goui/layout"
-	"goui/window"
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/layout"
+	"github.com/jacksalad/goui_v0/window"
 )
 
 func main() {
