@@ -26,7 +26,7 @@ type BaseComponent struct {
 }
 
 func (b *BaseComponent) OnFocus() {}
-func (b *BaseComponent) OnBlur()  {}
+func (b *BaseComponent) OnBlur() {}
 
 func (b *BaseComponent) GetPreferredSize() (int32, int32) {
 	return b.Bounds.Width, b.Bounds.Height

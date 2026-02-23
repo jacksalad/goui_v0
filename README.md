@@ -37,9 +37,9 @@ Here is a minimal "Hello World" application:
 package main
 
 import (
-	"github.com/jacksalad/goui_v0/component"
-	"github.com/jacksalad/goui_v0/layout"
-	"github.com/jacksalad/goui_v0/window"
+	"goui/component"
+	"goui/layout"
+	"goui/window"
 )
 
 func main() {

@@ -1,14 +1,13 @@
 package window
 
 import (
+	"github.com/jacksalad/goui_v0/component"
+	"github.com/jacksalad/goui_v0/event"
+	"github.com/jacksalad/goui_v0/render"
 	"runtime"
 	"sync"
 	"syscall"
 	"unsafe"
-
-	"github.com/jacksalad/goui_v0/component"
-	"github.com/jacksalad/goui_v0/event"
-	"github.com/jacksalad/goui_v0/render"
 
 	"golang.org/x/sys/windows"
 )
@@ -94,7 +93,7 @@ func init() {
 
 // NewWindow creates a new window with the given configuration
 func NewWindow(config WindowConfig) (*Window, error) {
-	className, _ := syscall.UTF16PtrFromString("github.com/jacksalad/goui_v0WindowClass")
+	className, _ := syscall.UTF16PtrFromString("GouiWindowClass")
 	title, _ := syscall.UTF16PtrFromString(config.Title)
 
 	hInst, _, _ := procGetModuleHandleW.Call(0)

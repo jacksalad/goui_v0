@@ -2,14 +2,13 @@ package main
 
 import (
 	"fmt"
-	"runtime"
-	"time"
-	"unsafe"
-
 	"github.com/jacksalad/goui_v0/component"
 	"github.com/jacksalad/goui_v0/layout"
 	"github.com/jacksalad/goui_v0/render"
 	"github.com/jacksalad/goui_v0/window"
+	"runtime"
+	"time"
+	"unsafe"
 
 	"golang.org/x/sys/windows"
 )

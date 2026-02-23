@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/jacksalad/goui_v0/component"
 	"github.com/jacksalad/goui_v0/layout"
 	"github.com/jacksalad/goui_v0/render"
@@ -13,7 +12,7 @@ type TodoApp struct {
 	window    *window.Window
 	input     *component.TextBox
 	listPanel *component.Panel
-
+	
 	// Fonts
 	titleFont *render.Font
 	itemFont  *render.Font
@@ -21,7 +20,7 @@ type TodoApp struct {
 
 func NewTodoApp() (*TodoApp, error) {
 	win, err := window.NewWindow(window.WindowConfig{
-		Title:     "github.com/jacksalad/goui_v0 Todo List",
+		Title:     "GOUI Todo List",
 		Width:     400,
 		Height:    600,
 		Resizable: false,
@@ -87,7 +86,7 @@ func (app *TodoApp) setupUI() {
 	}
 	app.listPanel.SetLayout(listLayout)
 	app.listPanel.BgColor = 0xFFFFFFFF // White background for list
-
+	
 	app.window.Root.Add(app.listPanel)
 }
 
@@ -113,7 +112,7 @@ func (app *TodoApp) addTodo() {
 	chk.OnCheck = func(checked bool) {
 		fmt.Printf("Task '%s' checked: %v\n", text, checked)
 	}
-
+	
 	// Delete Button
 	delBtn := component.NewButton("X")
 	delBtn.Font = app.itemFont
@@ -129,11 +128,11 @@ func (app *TodoApp) addTodo() {
 	itemPanel.Add(delBtn)
 
 	app.listPanel.Add(itemPanel)
-
+	
 	// Clear input
 	app.input.Text = ""
 	app.input.RequestRepaint()
-
+	
 	// Force repaint of list
 	app.listPanel.RequestRepaint()
 	app.window.Root.RequestRepaint()

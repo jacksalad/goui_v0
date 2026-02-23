@@ -1,12 +1,11 @@
 package main
 
 import (
-	"strconv"
-
 	"github.com/jacksalad/goui_v0/component"
 	"github.com/jacksalad/goui_v0/layout"
 	"github.com/jacksalad/goui_v0/render"
 	"github.com/jacksalad/goui_v0/window"
+	"strconv"
 )
 
 type Calculator struct {
@@ -22,7 +21,7 @@ type Calculator struct {
 
 func NewCalculator() (*Calculator, error) {
 	win, err := window.NewWindow(window.WindowConfig{
-		Title:     "github.com/jacksalad/goui_v0 Calculator",
+		Title:     "GOUI Calculator",
 		Width:     320,
 		Height:    470,
 		Resizable: false,

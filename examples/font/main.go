@@ -1,12 +1,11 @@
 package main
 
 import (
-	"runtime"
-
 	"github.com/jacksalad/goui_v0/component"
 	"github.com/jacksalad/goui_v0/layout"
 	"github.com/jacksalad/goui_v0/render"
 	"github.com/jacksalad/goui_v0/window"
+	"runtime"
 )
 
 func main() {

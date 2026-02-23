@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/jacksalad/goui_v0/component"
 	"github.com/jacksalad/goui_v0/layout"
 	"github.com/jacksalad/goui_v0/render"

@@ -12,7 +12,7 @@ Since GoUI is a local library in this context, you don't need to `go get` it if 
 If you were to use it as a module:
 
 ```bash
-go get github.com/jacksalad/goui_v0
+go get github.com/yourusername/goui
 ```
 
 ## Hello World
@@ -24,9 +24,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/jacksalad/goui_v0/component"
-	"github.com/jacksalad/goui_v0/layout"
-	"github.com/jacksalad/goui_v0/window"
+	"goui/component"
+	"goui/layout"
+	"goui/window"
 )
 
 func main() {
